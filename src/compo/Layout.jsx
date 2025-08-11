@@ -1,22 +1,23 @@
 import { Link, Outlet } from "react-router-dom";
+import './Layout.css'
 
 function Layout() {
     return (
         <div>
             <h2>홈 페이지</h2>
             <nav>
-                <ul>
+                <ul class="list">
                     <li>
-                        <Link to="/react-site/">Home</Link>
+                        <Link to="/react-site/" className="iink">Home</Link>
                     </li>
                     <li>
-                        <Link to="/react-site/login">Login</Link>
+                        <Link to="/react-site/login" className="iink">Login</Link>
                     </li>
                     <li>
-                          <Link to="/react-site/login2">Login2</Link>
+                          <Link to="/react-site/login2" className="iink">Login2</Link>
                     </li>
                     <li>
-                       <Link to="/react-site/Sclass">과제출석부</Link> 
+                       <Link to="/react-site/Sclass" className="iink">과제출석부</Link> 
                     </li>
 
                 </ul>
