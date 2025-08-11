@@ -10,7 +10,10 @@ function Layout() {
                         <Link to="/react-site/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/login">Login</Link>
+                        <Link to="/react-site/login">Login</Link>
+                    </li>
+                    <li>
+                          <Link to="/react-site/login2">Login2</Link>
                     </li>
 
                 </ul>

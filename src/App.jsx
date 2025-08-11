@@ -5,9 +5,10 @@ import "./App.css";
 import Login from "./compo/Login";
 import Home from "./compo/Home";
 import Layout from "./compo/Layout";
+import Login2 from "./compo/Login2";
 
 function App() {
-  
+
   return (
     <>
       <h1>과제방</h1>
@@ -16,6 +17,7 @@ function App() {
           <Route path="/react-site/" element={<Layout />} />
           <Route index element={<Home />} />
           <Route path="/react-site/login" element={<Login />} />
+          <Route path="/react-site/login2" element={<Login2 />} />
         </Routes>
       </BrowserRouter>
     </>
