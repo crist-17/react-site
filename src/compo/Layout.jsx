@@ -15,6 +15,9 @@ function Layout() {
                     <li>
                           <Link to="/react-site/login2">Login2</Link>
                     </li>
+                    <li>
+                       <Link to="/react-site/Sclass">과제출석부</Link> 
+                    </li>
 
                 </ul>
             </nav>

@@ -6,6 +6,7 @@ import Login from "./compo/Login";
 import Home from "./compo/Home";
 import Layout from "./compo/Layout";
 import Login2 from "./compo/Login2";
+import Sclass from "./class/Sclass";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/react-site/login" element={<Login />} />
           <Route path="/react-site/login2" element={<Login2 />} />
+       <Route path="/react-site/Sclass" element={<Sclass />} />
         </Routes>
       </BrowserRouter>
     </>
