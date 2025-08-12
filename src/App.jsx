@@ -1,4 +1,4 @@
-import { HashRouter, Routes } from "react-router-dom";
+import {BrowserRouter as Router, Routes } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import { Route } from "react-router-dom";
 // import { useState } from "react";
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <h1>-과제방-</h1>
-      <HashRouter>
+      <Router>
         <Routes>
            <Route path="/" element={<Navigate to="/react-site/" replace />} />
           <Route path="/react-site/" element={<Layout />} />
@@ -24,7 +24,7 @@ function App() {
        <Route path="/react-site/Sclass/" element={<Sclass />} />
         <Route path="*" element={<Navigate to="/react-site/" replace />} />
         </Routes>
-      </HashRouter>
+      </Router>
     </>
   )
 }
