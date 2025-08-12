@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { HashRouter, Routes } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { Route } from "react-router-dom";
 // import { useState } from "react";
 import "./App.css";
@@ -13,15 +14,17 @@ function App() {
   return (
     <>
       <h1>-과제방-</h1>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
+           <Route path="/" element={<Navigate to="/react-site/" replace />} />
           <Route path="/react-site/" element={<Layout />} />
           <Route index element={<Home />} />
-          <Route path="/react-site/login" element={<Login />} />
-          <Route path="/react-site/login2" element={<Login2 />} />
-       <Route path="/react-site/Sclass" element={<Sclass />} />
+          <Route path="/react-site/login/" element={<Login />} />
+          <Route path="/react-site/login2/" element={<Login2 />} />
+       <Route path="/react-site/Sclass/" element={<Sclass />} />
+        <Route path="*" element={<Navigate to="/react-site/" replace />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
