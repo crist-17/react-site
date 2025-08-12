@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content="0; url=/" />
+  <script>
+    (function () {
+      // 저장소 경로(앞뒤 슬래시 포함). 예: '/react-site/'
+      var repo = '/react-site/';
+      var l = window.location;
+
+      // 이미 리라이트 된 경우 패스
+      if (l.pathname === repo || l.pathname === repo.slice(0, -1)) return;
+
+      // GitHub Pages 404에서 들어온 경로를 그대로 전달
+      var newUrl = repo; // BrowserRouter는 index로 돌리면 라우터가 다시 매칭
+      l.replace(newUrl);
+    })();
+  </script>
+</head>
+<body>Redirecting…</body>
+</html>

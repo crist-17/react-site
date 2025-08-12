@@ -8,16 +8,19 @@ function Layout() {
             <nav>
                 <ul class="list">
                     <li>
-                        <Link to="/react-site/" className="iink">Home</Link>
+                        <Link to="/react-site/" className="link">Home</Link>
                     </li>
                     <li>
-                        <Link to="/react-site/login" className="iink">Login</Link>
+                        <Link to="/react-site/login" className="link">Login</Link>
                     </li>
                     <li>
-                          <Link to="/react-site/login2" className="iink">Login2</Link>
+                          <Link to="/react-site/login2" className="link">Login2</Link>
                     </li>
                     <li>
-                       <Link to="/react-site/Sclass" className="iink">과제출석부</Link> 
+                       <Link to="/react-site/Sclass" className="link">과제출석부</Link> 
+                    </li>
+                    <li>
+                        <Link to="/react-site/Arr" className="link">0812</Link> 
                     </li>
 
                 </ul>
