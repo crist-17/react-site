@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <h1>-과제방-방방방</h1>
-      <Router>
+      <HashRouter>
         <Routes>
-          {/* 부모 라우트 하나 두고 자식으로 중첩 */}
+     
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
@@ -22,7 +22,7 @@ function App() {
             <Route path="Arr" element={<Arr />} />
           </Route>
         </Routes>
-      </Router>
+      </HashRouter>
     </>
   );
 }
