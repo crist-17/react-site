@@ -8,7 +8,8 @@ function Check(props) {
     return (
         <div id="check" className={isChecked ? 'checked-box' : ''}>
             
-        <h2 className={isChecked ? 'colored' : ''}><b>{props.num}</b> 학생의 이름은 <b>{props.name}</b> 입니다.</h2><button id="btn" onClick={handleClick}>출석</button>
+        <h2 className={isChecked ? 'colored' : ''}><b>{props.num}</b> 학생의 이름은 <b>{props.name}</b> 입니다.</h2>
+        <button id="btn" onClick={handleClick}>출석</button>
         </div>
     )
 }

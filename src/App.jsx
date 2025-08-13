@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <h1>-과제방-방방</h1>
+      <h1>-과제방-방방방</h1>
       <Router>
         <Routes>
           <Route path="/react-site/" element={<Layout />}></Route>
