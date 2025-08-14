@@ -1,0 +1,22 @@
+.list {
+    list-style: none;
+    text-decoration: none;
+   
+}
+.list li {
+    border: 5px dotted black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(211, 173, 233);
+     font-size: 30px;
+     padding: 5px;
+
+    
+}
+.list a {
+    color: #e7073f;
+    font-weight: bold;
+}
+.list li:hover {
+   box-shadow: 5px 5px 10px blue;
+}

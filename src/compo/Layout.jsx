@@ -1,30 +1,42 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import './Layout.css'
 
 function Layout() {
+    const { pathname } = useLocation();
+    const isHome = pathname === "/";
     return (
         <div>
-            <h2>홈 페이지</h2>
-            <nav>
-                <ul class="list">
-                    <li>
-                        <Link to="/react-site/" className="link">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/react-site/login" className="link">Login</Link>
-                    </li>
-                    <li>
-                          <Link to="/react-site/login2" className="link">Login2</Link>
-                    </li>
-                    <li>
-                       <Link to="/react-site/Sclass" className="link">과제출석부</Link> 
-                    </li>
-                    <li>
-                        <Link to="/react-site/Arr" className="link">0812</Link> 
-                    </li>
+            {isHome && (
+                <>
+                    <h2>홈 페이지</h2>
+                    <nav>
+                        <ul className="list">
+                            <li>
+                                <Link to="/" className="link">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="login" className="link">Login</Link>
+                            </li>
+                            <li>
+                                <Link to="login2" className="link">Login2</Link>
+                            </li>
+                            <li>
+                                <Link to="Sclass" className="link">과제출석부</Link>
+                            </li>
+                            <li>
+                                <Link to="Arr" className="link">0812</Link>
+                            </li>
+                             <li>
+                                <Link to="Home_0813" className="link">0813</Link>
+                            </li>
+                             <li>
+                                <Link to="Comp_0814" className="link">0814</Link>
+                            </li>
 
-                </ul>
-            </nav>
+                        </ul>
+                    </nav>
+                </>
+            )}
             <Outlet></Outlet>
         </div>
     );
