@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <h1>-과제방-방방방</h1>
-      <HashRouter>
+      <Router>
         <Routes>
      
           <Route path="/" element={<Layout />}>
@@ -22,7 +22,7 @@ function App() {
             <Route path="Arr" element={<Arr />} />
           </Route>
         </Routes>
-      </HashRouter>
+      </Router>
     </>
   );
 }
