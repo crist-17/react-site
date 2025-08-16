@@ -6,7 +6,7 @@ import Layout from "./compo/Layout";
 import Login2 from "./compo/Login2";
 import Sclass from "./class/Sclass";
 import Arr from "./comp22/Arr";
-import Home_0813 from "./comp_0813/home_0813";
+import Home_0813 from "./comp_0813/Home_0813"
 import Comp_0814 from "./comp_0814/Comp_0814";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
             <Route path="login2" element={<Login2 />} />
             <Route path="Sclass" element={<Sclass />} />
             <Route path="Arr" element={<Arr />} />
-             <Route path="Home_0813" element={<Home_0813 />} />
+             <Route path="Home_0813/*" element={<Home_0813 />} />
               <Route path="Comp_0814" element={<Comp_0814 />} />
           </Route>
         </Routes>

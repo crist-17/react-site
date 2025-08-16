@@ -1,29 +1,17 @@
-import { Link, Outlet, useLocation } from "react-router-dom";
-import './Layout_0813.css'
+import { Outlet, useLocation, Link } from 'react-router-dom';
 
-function Layout() {
+export default function Layout() {
     const { pathname } = useLocation();
-    const isHome = pathname === "/";
+    const showNav = pathname.startsWith('/Home_0813'); // 0813 하위에서 항상 메뉴 보이기
     return (
         <div>
-            {isHome && (
-                <>
-                    <h2>0813</h2>
-                    <nav>
-                        <ul className="list">
-                            <li>
-                                <Link to="Comp_memo" className="link">Memo</Link>
-                            </li>
-                            <li>
-                                <Link to="Comp_effect" className="link">Effect</Link>
-                            </li>
-                          
-                        </ul>
-                    </nav>
-                </>
+            {showNav && (
+                <nav style={{ display: 'flex', gap: 12 }}>
+                    <Link to="/Home_0813/Comp_memo">Memo</Link>
+                    <Link to="/Home_0813/Comp_effect">Effect</Link>
+                </nav>
             )}
-            <Outlet></Outlet>
+            <Outlet />
         </div>
     );
 }
-export default Layout;
