@@ -35,6 +35,9 @@ function Layout() {
                             <li>
                                 <Link to="React_0818" className="link">0818블로그</Link>
                             </li>
+                              <li>
+                                <Link to="React_0818_proj" className="link">0818 예습</Link>
+                            </li>
 
                         </ul>
                     </nav>
