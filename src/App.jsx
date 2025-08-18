@@ -8,6 +8,7 @@ import Sclass from "./class/Sclass";
 import Arr from "./comp22/Arr";
 import Home_0813 from "./comp_0813/Home_0813"
 import Comp_0814 from "./comp_0814/Comp_0814";
+import React_0818 from "./react_0818/React_0818";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="Arr" element={<Arr />} />
              <Route path="Home_0813/*" element={<Home_0813 />} />
               <Route path="Comp_0814" element={<Comp_0814 />} />
+              <Route path="react_0818/*" element={<React_0818 />} />
           </Route>
         </Routes>
       </Router>

@@ -26,11 +26,14 @@ function Layout() {
                             <li>
                                 <Link to="Arr" className="link">0812</Link>
                             </li>
-                             <li>
+                            <li>
                                 <Link to="Home_0813" className="link">0813</Link>
                             </li>
-                             <li>
+                            <li>
                                 <Link to="Comp_0814" className="link">0814</Link>
+                            </li>
+                            <li>
+                                <Link to="React_0818" className="link">0818블로그</Link>
                             </li>
 
                         </ul>
