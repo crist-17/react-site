@@ -7,7 +7,17 @@ const React_0818_proj = () => {
             <p>chapter 5</p>
             <NotificationList /><hr />
            
-          
+            <Ex_cont>
+                <Ex_context1 />
+               
+            </Ex_cont>
+            {/* 외부 js  */}
+            <Ex_js_2 />
+            <Ex_zustand_3 />
+            <Provider store={store_redux}>
+                <Ex_redux_4 />
+            </Provider>
+
         </div>
     );
 };
