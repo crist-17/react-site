@@ -15,7 +15,7 @@ const reservedNotifications = [
         message: "이제 곧 미팅이 시작됩니다.",
     },
 ]
-const INTERVAL_MS = 1500
+const INTERVAL_MS = 1000;
 const BLINK_MS = 500;
 
 class NotificationList extends React.Component {
