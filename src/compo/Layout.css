@@ -4,19 +4,23 @@
    
 }
 .list li {
-    border: 5px dotted black;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    background-color: rgb(211, 173, 233);
-     font-size: 30px;
-     padding: 5px;
+    
 
     
 }
 .list a {
     color: #e7073f;
     font-weight: bold;
+   width: 270px;
+    display: inline-block;
+    border: 5px dotted black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(211, 173, 233);
+     font-size: 30px;
+     padding: 5px;
 }
-.list li:hover {
+.list li a:hover {
    box-shadow: 5px 5px 10px blue;
+   color: rgb(16, 88, 16);
 }
